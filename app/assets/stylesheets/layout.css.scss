@@ -1,0 +1,28 @@
+/* SASS Document Layout */
+
+$dunkel-rot: #8a2221;
+
+html > body {min-height: 101%;}
+body {margin: 0 auto;width: 1060px;background: #BEB6B6 url('body-bg.png') repeat-x;}
+#wrapper {width: 1060px;background: url('wrapper-bg.png') repeat-y;}
+
+#header {height:241px;padding-left:2px;background: url('country-balken.png')no-repeat left bottom;}
+#sidebar-left {float: left;width: 250px;margin:0;padding:0;}
+#container {float: right;width:800px;margin-top:20px;}
+#inhalte {float: left;width:580px;}
+#sidebar-right {float: right;width: 200px;}
+#footer {height:30px;clear: both;padding:10px;}
+
+#header ul#bild {font-size:80%;padding-left: 40px;float:left;}
+#header ul#bild li {display:inline;padding-left:15px;}
+
+#header ul#text {font-size:75%;padding-left:410px;float:left;}
+#header ul#text li {display:inline;padding-left:100px;}
+
+#sidebar-left ul{margin:0 12px 0 2px;}
+#sidebar-left ul li {font-size:75%;list-style-type:none;padding-left:15px;border-bottom:1px solid darken($dunkel-rot, 5%);background: url(anker.png)no-repeat;}
+#sidebar-left ul li a{color:#FBD4A9;display: block;height:30px;line-height:30px;}
+#sidebar-left ul li a:hover{background: url(rollover.png)no-repeat;}
+
+#header li a{color: $dunkel-rot; }
+

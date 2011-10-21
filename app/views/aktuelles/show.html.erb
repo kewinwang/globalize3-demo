@@ -1,0 +1,16 @@
+<% title "Aktuelle" %>
+
+<p>
+  <strong>Title:</strong>
+  <%= @aktuelle.title %>
+</p>
+<p>
+  <strong>Text:</strong>
+  <%= @aktuelle.text %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_aktuelle_path(@aktuelle) %> |
+  <%= link_to "Destroy", @aktuelle, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", aktuelles_path %>
+</p>

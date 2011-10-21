@@ -1,0 +1,32 @@
+<%= simple_form_for @aktuelle,:html => { :multipart => true } do |f| %>
+
+<%= f.submit (@aktuelle.new_record? ? "Eintragen" : "Speichern") %>
+	<p>&nbsp;</p>
+
+<div class="inputs">
+    <%= f.input :image, :as => :file, :required => false, :label => if @aktuelle.image? then
+    image_tag(@aktuelle.image.url(:thumb))
+        else
+    'Bild max 150kb'
+    end%>
+
+</div>
+
+<p>&nbsp;</p>
+<div class="inputs">
+
+  <h2>Deutsch (default locale)</h2>
+  <p><%= f.input :title %></p>
+  <p><%= f.cktext_area :text, :skin=> 'kama', :toolbar=>'Easy', :height=>'400px' %></p>
+
+  <h2>Englisch</h2>
+  <%= f.globalize_fields_for(:en) do |g| %>
+  <p><%= g.input :title %></p>
+  <p><%= g.cktext_area :text, :skin=> 'kama', :toolbar=>'Easy', :height=>'400px' %></p>
+  <% end %>
+
+</div>
+
+<% end %>
+
+

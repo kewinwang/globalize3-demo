@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+  <title><%= content_for?(:title) ? yield(:title) : "Hotel Schuster" %></title>
+  <meta name="description" content="<%= yield :meta_description %>" />
+  <meta name="keywords" content="<%= yield :meta_keywords %>" />
+  <meta name="robots" content="index, follow">
+
+  <%= stylesheet_link_tag "application" %>
+  <%= javascript_include_tag "application" %>
+
+  <link rel="icon" href="images/favicon.ico" type="image/ico" />
+
+  <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div id="wrapper">
+
+<div id="header">
+  head
+</div>
+
+
+<div id="sidebar-left" class="clear">
+  sidebar left
+</div>
+
+<div id="container">
+
+<div id="sidebar-right">
+  sidebar right
+</div>
+
+<div id="inhalte">
+  <%= yield %>
+</div>
+
+</div><!--container ende-->
+
+<div id="footer">footer</div>
+
+</div><!--wrapper ende-->
+
+
+
+</body>
+</html>

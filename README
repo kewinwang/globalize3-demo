@@ -1,0 +1,20 @@
+Da ich zum Thema Multilanguage mit Globalize3 keine Demo finden konnte..
+Hier ist eine.
+
+Inklusive simple_form, CKEditor, Carrierwave
+
+gem "mysql2"
+gem "simple_form"
+gem "nifty-generators"
+gem "rmagick"
+gem "carrierwave"
+gem "ckeditor", "~> 3.6.0"
+gem "sorcery"
+gem "kaminari"
+gem 'execjs'
+gem 'therubyracer'
+gem 'globalize3'
+
+
+Hoffe es hilft weiter.
+
